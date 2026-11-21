@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fayezspeed.com/sitemap.xml

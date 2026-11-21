@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docs — Fayez Speed</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Fayez Speed — PC Performance Suite">
+<meta property="og:description" content="Free Windows PC performance suite: one-click boosting, real Game Mode, junk cleaning, reversible tweaks.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">FAYEZ SPEED</div>
+  <nav><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="download.html">Download</a><a href="docs.html">Docs</a></nav>
+</header>
+
+<section class="docs">
+  <h1>Documentation</h1>
+  <h2>Getting started</h2>
+  <ol>
+    <li>Run <code>FayezSpeed.exe</code> as administrator.</li>
+    <li>Open <strong>Boost</strong> → choose <strong>Lite</strong> (safe, recommended) or <strong>Power</strong> (deeper tuning).</li>
+    <li>Enable "Create a Windows restore point before each boost" in Settings if you want a system checkpoint.</li>
+  </ol>
+  <h2>Game Mode</h2>
+  <p>Game Mode sets the High performance power plan and suspends selected background apps (browsers, chat, cloud) until you stop it. They resume exactly where they left off. Auto-Boost detects games in your library.</p>
+  <h2>Emulator Booster (Game Loop)</h2>
+  <p>Windows-level tweaks (power plan, process priority, GPU preference, fullscreen-optimisation override, RAM trim, cache clean, Hyper-V toggle, engine registry settings). Does not modify the game — no ban risk. For 100% performance also enable VT in BIOS and disable Hyper-V (trade-off: WSL/Docker).</p>
+  <h2>Safety</h2>
+  <ul>
+    <li>Every change is backed up to <code>%APPDATA%\FayezSpeed\backups\</code> before applying.</li>
+    <li>Undo individual tweaks or "Restore everything".</li>
+    <li>Fayez Speed does not disable Windows Defender, Windows Update, VBS or Hyper-V automatically (except the opt-in Emulator Booster toggle).</li>
+  </ul>
+  <h2>Data location</h2>
+  <p><code>%APPDATA%\FayezSpeed\</code> — config, backups, games, benchmarks, activity, logs.</p>
+  <h2>Command-line flags</h2>
+  <ul>
+    <li><code>--auto-clean</code> — run scheduled safe cleanup and exit.</li>
+    <li><code>--selftest</code> — build every page offscreen (CI).</li>
+    <li><code>--no-elevate</code> — do not request administrator rights.</li>
+  </ul>
+  <h2>FAQ</h2>
+  <h3>Does it work offline?</h3>
+  <p>Yes. All tweaks, cleaning, monitoring, benchmarking work offline. License validation requires internet (with 14-day offline grace).</p>
+  <h3>Will it get me banned from games?</h3>
+  <p>No. Fayez Speed only uses documented Windows APIs (power plan, priority, registry preferences). It never injects into game processes.</p>
+</section>
+
+<footer>
+  <p>Fayez Speed is not affiliated with Microsoft, Hone, IQ Optimizer, Steam or Epic Games.</p>
+  <p><a href="index.html">Home</a> · <a href="pricing.html">Pricing</a> · <a href="download.html">Download</a></p>
+</footer>
+</body>
+</html>
